@@ -2,7 +2,7 @@
 using namespace std;
 
 const int N=101;
-int q,n,m;
+int n,m;
 int dp[N][N];
 string a,b;
 
