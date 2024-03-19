@@ -2,7 +2,7 @@
 using namespace std;
 
 const int N=1e6+1;
-int q,n,k;
+int n,k;
 int arr[N],dp[N];
 
 int main(){
