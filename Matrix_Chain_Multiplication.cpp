@@ -4,7 +4,7 @@
 using namespace std;
 
 const int N=101;
-int q,n;
+int n;
 int idx;
 pii arr[N];
 ll dp[N][N];
@@ -22,24 +22,16 @@ ll solve(int l,int r){
 
 int main(){
     ios_base::sync_with_stdio(0),cin.tie(0);
-    cin >> q;
-    while(q--){
-        cin >> n;
-        cin >> arr[1].first;
-        idx=1;
-        for(int i=2; i<=n; i++){
-            cin >> arr[idx].second;
-            arr[idx+1].first=arr[idx].second;
-            idx++;
-        }
-        idx--;
-        cout << solve(1,idx) << '\n';
-        for(int i=1; i<=idx; i++){
-            for(int j=1; j<=idx; j++){
-                dp[i][j]=0;
-            }
-        }
+    cin >> n;
+    cin >> arr[1].first;
+    idx=1;
+    for(int i=2; i<=n; i++){
+        cin >> arr[idx].second;
+        arr[idx+1].first=arr[idx].second;
+        idx++;
     }
+    idx--;
+    cout << solve(1,idx) << '\n';
 
     return 0;
 }
