@@ -3,7 +3,7 @@
 using namespace std;
 
 const int N=101,MOD=1e9+7;
-int q,n,m;
+int n,m;
 ll dp[N][N];
 
 int main(){
